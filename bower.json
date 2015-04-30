@@ -1,0 +1,19 @@
+{
+  "name": "LEduC Prototype",
+  "version": "0.0.0",
+  "authors": [
+    "Pedro Henrique <pedrohenriqueramossouza@gmail.com>"
+  ],
+  "description": "Prototype for projects to be used in LEduC",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
