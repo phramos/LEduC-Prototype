@@ -2,3 +2,5 @@
 
 require:
     - play
+    - net.sf.flexjson -> flexjson 2.1
+    

@@ -1,0 +1,22 @@
+{
+  "name": "LEduC-Prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phramos/LEduC-Prototype.git"
+  },
+  "author": "Pedro Henrique Ramos Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phramos/LEduC-Prototype/issues"
+  },
+  "homepage": "https://github.com/phramos/LEduC-Prototype"
+}
