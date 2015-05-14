@@ -33,7 +33,14 @@ public class Matricula extends Model {
 	
 	public static List<Matricula> listarPorAluno(Aluno aluno){
 		Criteria criteria = HibernateUtil.createCriteria(Matricula.class);
-		criteria.add(Restrictions.eq("alunos.id", aluno.id));
+		criteria.add(Restrictions.eq("aluno.id", aluno.id));
+		return criteria.list();
+	}
+	
+	public static List<Matricula> listarPorAlunoSemestre(Aluno aluno, String semestre){
+		Criteria criteria = HibernateUtil.createCriteria(Matricula.class);
+		criteria.add(Restrictions.eq("aluno.id", aluno.id));
+		criteria.add(Restrictions.eq("semestreLetivo", semestre));
 		return criteria.list();
 	}
 }

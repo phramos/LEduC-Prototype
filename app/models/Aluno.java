@@ -7,7 +7,6 @@ import util.HibernateUtil;
 
 import javax.persistence.*;
 
-
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Conjunction;
 import org.hibernate.criterion.Projection;
@@ -38,6 +37,11 @@ public class Aluno extends Model {
 		this.senha = senha;
 		this.email = email;
 		this.matriculas = new ArrayList<Matricula>();
+	}
+
+	public Aluno(Long id) {
+		this.id = id;
+		matriculas = new ArrayList<Matricula>();
 	}
 
 	public static List<Aluno> buscarPorNome(String nome) {
