@@ -1,0 +1,81 @@
+#Dados iniciais que serão carregados para testes
+
+Disciplina(algoritmos):
+  codigo:    GCC101
+  nome:      Algoritmos e Estruturas de Dados I
+  creditos:  6
+  
+Disciplina(calculo):
+  codigo:    DEX101
+  nome:      Calculo I
+  creditos:  6
+  
+Disciplina(fundamentos):
+  codigo:    GCC102
+  nome:      Fundamentos de Ciência da Computação
+  creditos:  6
+  
+  
+Aluno(pedro):
+  numeroDeMatricula:    201120530
+  nome:         Pedro Henrique Ramos Souza
+  senha:        senha
+  email:        pedrohenriqueramossouza@gmail.com
+    
+Aluno(matheus):
+  numeroDeMatricula:    201120001
+  nome:         Matheus Ferreira
+  senha:        senha
+  email:        matheus@leduc.ufla.br
+  
+Aluno(alvaro):
+  numeroDeMatricula:    201120002
+  nome:         Alvaro teixeira
+  senha:        senha
+  email:        alvaro@leduc.ufla.br  
+  
+Aluno(vitor):
+  numeroDeMatricula:    201120003
+  nome:         Vitor Marçal
+  senha:        senha
+  email:        vitor@leduc.ufla.br  
+
+Matricula(mat1):
+  codigo:         GCC102
+  disciplina:     algoritmos
+  aluno:          pedro
+  notaFinal:      78
+  semestreLetivo: 2012/2
+  
+Matricula(mat2):
+  codigo:         GEX101
+  disciplina:     calculo
+  aluno:          pedro
+  notaFinal:      67
+  semestreLetivo: 2013/2
+
+Matricula(mat3):
+  codigo:         GCC101
+  disciplina:     fundamentos
+  aluno:          pedro
+  notaFinal:      80
+  semestreLetivo: 2014/2
+  
+Matricula(mat4):
+  disciplina:     calculo
+  aluno:          vitor
+  notaFinal:      85
+  semestreLetivo: 2011/2
+
+Matricula(mat5):
+  disciplina:     algoritmos
+  aluno:          alvaro
+  notaFinal:      100
+  semestreLetivo: 2012/2
+
+Matricula(mat6):
+  disciplina:     fundamentos
+  aluno:          matheus
+  notaFinal:      54
+  semestreLetivo: 2012/2
+  
