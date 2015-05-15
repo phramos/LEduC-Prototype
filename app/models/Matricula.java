@@ -43,6 +43,19 @@ public class Matricula extends Model {
 		criteria.add(Restrictions.eq("semestreLetivo", semestre));
 		return criteria.list();
 	}
+	
+	public static List<Matricula > listarPorDisciplina(Disciplina disciplina){
+		Criteria criteria = HibernateUtil.createCriteria(Matricula.class);
+		criteria.add(Restrictions.eq("disciplina.id", disciplina.id));
+		return criteria.list();
+	}
+	
+	public static List<Matricula > listarPorDisciplinaSemestre(Disciplina disciplina, String semestreLetivo){
+		Criteria criteria = HibernateUtil.createCriteria(Matricula.class);
+		criteria.add(Restrictions.eq("disciplina.id", disciplina.id));
+		criteria.add(Restrictions.eq("semestreLetivo", semestreLetivo));
+		return criteria.list();
+	}
 }
 
 

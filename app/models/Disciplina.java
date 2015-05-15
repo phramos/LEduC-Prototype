@@ -24,5 +24,10 @@ public class Disciplina extends Model {
 		this.creditos = creditos;
 		this.matriculas = new ArrayList<Matricula>();
 	}
+
+	public Disciplina(Long id) {
+		this.id = id;
+		this.matriculas = new ArrayList<Matricula>();
+	}
     
 }
